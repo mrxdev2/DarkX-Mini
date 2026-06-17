@@ -81,8 +81,13 @@ const clientstart = async () => {
 
     await loadBaileys();
 
-    // SESSION ID MANAGEMENT
-    const sessId = process.env.SESSION_ID || config.SESSION_ID;
+    // SESSION ID MANAGEMENT (Imelazimishwa kusoma Heroku Config Vars Pekee)
+    const sessId = process.env.SESSION_ID; 
+
+    if (!sessId) {
+        console.log(chalk.red("❌ Hitilafu: Hakuna SESSION_ID iliyopatikana kwenye Heroku Config Vars!"));
+        process.exit(1); 
+    }
 
     if (
         sessId &&
@@ -97,19 +102,26 @@ const clientstart = async () => {
         }
 
         try {
-
             const base64Data = sessId.split("DarkX-Ultra~")[1];
+            const bufferData = Buffer.from(base64Data, 'base64');
+
+            // Kufungua na ku-decompress kodi yenye nyota (Gzip/Zlib compression format)
+            const zlib = require('zlib');
+            const decryptedData = zlib.gunzipSync(bufferData).toString('utf-8');
 
             fs.writeFileSync(
                 path.join(sessionPath, 'creds.json'),
-                Buffer.from(base64Data, 'base64').toString('utf-8')
+                decryptedData
             );
 
+            console.log(chalk.green("✅ creds.json imetengenezwa vizuri kutoka kwenye Session ID!"));
+
         } catch (e) {
-            console.log(chalk.red("❌ Session ID is corrupt!"));
+            console.log(chalk.red("❌ Session ID is corrupt or invalid! Error:"), e.message);
         }
     }
 
+    
     // AUTH STATE
     const { state, saveCreds } = await useMultiFileAuthState(sessionPath);
 
@@ -462,7 +474,7 @@ const clientstart = async () => {
             }
 
             // =========================
-            // MAIN HANDLER
+            // MAIN HANDLER (REKEBISHWA KUENDANA NA MESSAGE.JS)
             // =========================
             require("./message")(sock, m, chatUpdate);
 
