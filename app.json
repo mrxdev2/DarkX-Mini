@@ -19,11 +19,5 @@
       "value": ".",
       "required": false
     }
-  },
-  "formation": {
-    "worker": {
-      "quantity": 1,
-      "size": "eco"
-    }
   }
 }
