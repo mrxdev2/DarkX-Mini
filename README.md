@@ -5,8 +5,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/darkx-pro/DarkX-Mini/fork"><img src="https://img.shields.io/badge/FORK-REPO-blue?style=for-the-badge&logo=github" alt="Fork"></a>
-  <a href="https://github.com/darkx-pro/DarkX-Mini/stargazers"><img src="https://img.shields.io/badge/STAR-REPO-yellow?style=for-the-badge&logo=github" alt="Stars"></a>
+  <a href="https://github.com/mrxdev2/DarkX-Mini/fork"><img src="https://img.shields.io/badge/FORK-REPO-blue?style=for-the-badge&logo=github" alt="Fork"></a>
+  <a href="https://github.com/mrxdev2/DarkX-Mini/stargazers"><img src="https://img.shields.io/badge/STAR-REPO-yellow?style=for-the-badge&logo=github" alt="Stars"></a>
 </p>
 
 ---
@@ -14,19 +14,19 @@
 ## 🚀 NJIA ZA KU-DEPLOY
 
 ### 1. HEROKU (Njia Rahisi)
-Bonyeza button hapa chini kuanza ku-deploy moja kwa moja kwenye Heroku.
+Bonyeza button hapa chini kuanza ku-deploy moja kwa moja kwenye Heroku kwa kutumia akaunti yako.
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/mrxdev2/DarkX-Mini)
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mrxdev2/DarkX-Mini)
 
 ---
 
 ## 🔑 JINSI YA KUPATA SESSION ID
 Kabla ya ku-deploy, unahitaji **Session ID**. Fuata hatua hizi:
 
-1.  Fungua tovuti hii: [**SMD Pairing Site**](https://smd-pair.zone.id/pair)
-2.  Ingiza namba yako ya WhatsApp (mfano: `255775710774`).
-3.  Ingiza **Pairing Code** utakayopokea kwenye WhatsApp yako.
-4.  Baada ya kufanikiwa, utatumiwa kodi ndefu inayoanza na `SMD~`.
+1. Fungua tovuti hii: [**SMD Pairing Site**](https://smd-pair.zone.id/pair)
+2. Ingiza namba yako ya WhatsApp (mfano: `255775710774`).
+3. Ingiza **Pairing Code** utakayopokea kwenye WhatsApp yako.
+4. Baada ya kufanikiwa, utatumiwa kodi ndefu inayoanza na `SMD~`.
 
 ### ⚠️ MUHIMU: Badilisha Jina la Session
 Bot yetu inatambua kodi inayozanza na jina la **DarkX-Ultra**. Fanya hivi:
@@ -41,7 +41,7 @@ Kama unatumia Panel au VPS, tumia amri hizi kwenye Console:
 
 ```bash
 # 1. Clone Repo
-git clone [https://github.com/darkx-pro/DarkX-Mini.git](https://github.com/darkx-pro/DarkX-Mini.git)
+git clone [https://github.com/mrxdev2/DarkX-Mini.git](https://github.com/mrxdev2/DarkX-Mini.git)
 
 # 2. Ingia kwenye folder
 cd DarkX-Mini
