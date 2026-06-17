@@ -19,7 +19,7 @@ module.exports = {
      * Weka Session ID yako hapa chini (Inapaswa kuanza na 'DarkX-Ultra~').
      * Kama unatumia Heroku, iweke kwenye Config Vars kwanza.
      */
-    SESSION_ID: process.env.SESSION_ID || "DarkX-Ultra~WEKA_ID_YAKO_HAPA", 
+    SESSION_ID: process.env.SESSION_ID || "", 
     
     sessionName: "session", // Jina la folder la kuhifadhi login details (Usibadilishe)
     
