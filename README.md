@@ -16,7 +16,7 @@
 ### 1. HEROKU (Njia Rahisi)
 Bonyeza button hapa chini kuanza ku-deploy moja kwa moja kwenye Heroku.
 
-[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/darkx-pro/DarkX-Mini)
+[![Deploy to Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/mrxdev2/DarkX-Mini)
 
 ---
 
